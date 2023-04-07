@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''returns information about his/her to list progress Requirements'''
+"""Returns info about his/her TODO list progress by giving employee ID"""
 import pandas as pd
 import requests
 import sys
