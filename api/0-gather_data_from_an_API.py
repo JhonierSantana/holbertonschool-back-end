@@ -5,8 +5,8 @@ import requests
 import sys
 
 if __name__ == '__main__':
-    '''data analysis'''
     reponse = requests.get('https://jsonplaceholder.typicode.com/todos/')
+    '''data analysis'''
     data = pd.read_json(reponse.text)
     total_number_of_task = len(data[data['userId'] == int(sys.argv[1])])
     completed = len(data[(data['userId'] == int(
